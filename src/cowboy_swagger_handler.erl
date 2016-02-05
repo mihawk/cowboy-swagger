@@ -34,7 +34,7 @@ trails(Options) ->
     #{get => #{hidden => true}}),
   Static = trails:trail(
     "/api-docs/[...]",
-    cowboy_static,
+    n2o_static,
     {dir, StaticFiles, [{mimetypes, cow_mimetypes, all}]},
     #{get => #{hidden => true}}),
   MD = #{get => #{hidden => true}},
